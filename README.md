@@ -1,6 +1,6 @@
 # tydids-p2p-mqtt
 
-<a href="https://stromdao.de/" target="_blank" title="STROMDAO - Digital Energy Infrastructure"><img src="./static/stromdao.png" align="right" height="85px" hspace="30px" vspace="30px"></a>
+<a href="https://stromdao.de/" target="_blank" title="STROMDAO - Digital Energy Infrastructure"><img src="https://rawcdn.githack.com/energychain/tydids-p2p-http/39ee1b927300efeb6aca81abfe98ca079f6a06be/static/stromdao.png" align="right" height="85px" hspace="30px" vspace="30px"></a>
 
 **[TyDIDs](https://tydids.com) based P2P Data Identity collector and publisher for MQTT / MQIsdp / WMQTT**
 
