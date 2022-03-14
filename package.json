@@ -1,0 +1,30 @@
+{
+  "name": "tydids-p2p-mqtt",
+  "version": "0.5.1",
+  "description": "TyDIDs based P2P Data Identity collector and publisher for MQTT / MQIsdp / WMQTT",
+  "main": "lib.js",
+  "scripts": {
+    "test": "mocha -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/energychain/tydids-p2p-mqtt.git"
+  },
+  "keywords": [
+    "mqtt",
+    "did",
+    "identity",
+    "decentralized",
+    "ssi",
+    "p2p"
+  ],
+  "author": "STROMDAO GmbH <dev@stromdao.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/energychain/tydids-p2p-mqtt/issues"
+  },
+  "homepage": "https://github.com/energychain/tydids-p2p-mqtt#readme",
+  "dependencies": {
+    "tydids-p2p": "^1.1.0"
+  }
+}
