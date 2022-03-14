@@ -37,6 +37,35 @@ Options:
   -h, --help                     display help for command
 ```
 
+### Presentation on MQTT subscribtion
+
+Terminal 1:
+```
+tydids-p2p-mqtt -t '/home#'
+```
+
+Terminal 2:
+```
+mosquitto_pub -h localhost -t /home/kitchen -m "27"
+```
+
+(optional) Terminal 3 (requires TyDIDS-P2P to be installed!):
+```
+tydids -p <PRESENTATION_FROM_TERMINAL1>
+```
+
+### MQTT publish on Presentation update
+
+Terminal 1:
+```
+tydids-p2p-mqtt -t '/tydids' -p 0x19B9f727e38F224dE49b564282c339F1f8e224Ea
+```
+
+Terminal 2:
+```
+mosquitto_sub -h localhost -t '/tydids/#'
+```
+
 ## Maintainer / Imprint
 
 <addr>
