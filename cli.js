@@ -11,6 +11,7 @@ program
   .option('-n --mqttBroker <url>')
   .option('-p --presentation [address]')
   .option('-t --topic <topic>')
+  .option('-i --identity <address>')
   .option('--createPrivateKey')
 
 program.parse();
@@ -53,6 +54,7 @@ const app = async function() {
     lib.run({
       privateKey:options.privateKey,
       presentation:options.presentation,
+      identity:options.identity
     },{
       broker: options.mqttBroker,
       topic: options.topic

@@ -47,6 +47,10 @@ const TydidsP2PMQtt = {
 
     }
 
+    if(typeof tydidsconfig.identity !== 'undefined') {
+      ssi.setIdentifier(tydidsconfig.identity);
+    }
+    
     if(typeof tydidsconfig.presentation !== 'undefined') {
       setInterval(_subscribe,tydidsconfig.resubscribe);
       let presentation = await ssi.retrievePresentation(tydidsconfig.presentation);
