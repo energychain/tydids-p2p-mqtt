@@ -1,6 +1,6 @@
 {
   "name": "tydids-p2p-mqtt",
-  "version": "0.5.2",
+  "version": "1.2.0",
   "description": "TyDIDs based P2P Data Identity collector and publisher for MQTT / MQIsdp / WMQTT",
   "main": "lib.js",
   "scripts": {

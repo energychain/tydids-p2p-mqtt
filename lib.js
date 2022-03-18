@@ -5,7 +5,7 @@ const TydidsP2PMQtt = {
   run:async function(tydidsconfig,mqttconfig) {
     const mqtt = require('mqtt')
     const client  = mqtt.connect(mqttconfig.broker)
-    const ssi = await TyDIDs.ssi(tydidsconfig.privateKey,true);
+    const ssi = await TyDIDs.ssi(tydidsconfig.privateKey,true,null,tydidsconfig.port);
     let publishPresentation = {};
 
     if((typeof tydidsconfig.measurement == 'undefined') || (tydidsconfig.measurement == null)) {
@@ -50,7 +50,7 @@ const TydidsP2PMQtt = {
     if(typeof tydidsconfig.identity !== 'undefined') {
       ssi.setIdentifier(tydidsconfig.identity);
     }
-    
+
     if(typeof tydidsconfig.presentation !== 'undefined') {
       setInterval(_subscribe,tydidsconfig.resubscribe);
       let presentation = await ssi.retrievePresentation(tydidsconfig.presentation);
